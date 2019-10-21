@@ -17,7 +17,7 @@
         app:layout_constraintVertical_bias="0.032" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etMass"
         android:layout_width="146dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -26,30 +26,28 @@
         tools:layout_editor_absoluteY="319dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/etHeight"
         android:layout_width="164dp"
         android:layout_height="49dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteY="315dp"
-        tools:layout_editor_absoluteX="218dp" />
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="315dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="418dp" />
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="159dp" />
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="292dp"
+        android:layout_height="59dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="144dp" />
 
 </android.support.constraint.ConstraintLayout>
