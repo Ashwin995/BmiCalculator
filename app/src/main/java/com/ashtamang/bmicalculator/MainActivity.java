@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 // Validation
                 if(etMass.getText().toString().matches("") )
                 {
-                    etMass.setError("Enter weight");
+                    etMass.setError("Enter Mass");
                     return;
                 }
                 if(etHeight.getText().toString().matches("") )
