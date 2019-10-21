@@ -49,14 +49,16 @@ public class MainActivity extends AppCompatActivity {
                 n2=Float.parseFloat(etHeight.getText().toString());
                 result=n1/(n2*n2);
                 if(result>=25 && result<29.9)
-                    bmi="overweight";
+                    bmi="You are Overweight";
                 else if(result>=18.5 && result<24.9)
-                    bmi="healthy / Normal Weight";
-                else if(result>18.5)
-                    bmi="Under Weight";
+                    bmi="You have a Normal Weight";
+                else if(result<=18.5)
+                    bmi="You are Under Weight";
+                else if(result>=30)
+                    bmi="You have Obesity";
 
 
-                tvOutput.setText("BMI=" + new DecimalFormat("##.##").format(result)+"\n"+bmi);
+                tvOutput.setText("Your BMI = " + new DecimalFormat("##.##").format(result)+"\n*"+bmi+"*");
 
             }
         });

@@ -74,7 +74,7 @@
             android:layout_width="164dp"
             android:layout_height="49dp"
             android:ems="10"
-            android:hint="in sq. meter"
+            android:hint="in meter"
             android:inputType="numberDecimal"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="218dp" />
@@ -108,8 +108,9 @@
         <TextView
             android:id="@+id/tvOutput"
             android:layout_width="292dp"
-            android:layout_height="59dp"
-            android:hint="Your BMI"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:hint="Your BMI ="
             android:textSize="20sp"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
