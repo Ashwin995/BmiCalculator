@@ -21,10 +21,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
-
         etMass=(EditText)findViewById(R.id.etMass);
         etHeight=(EditText)findViewById(R.id.etHeight);
         tvOutput=(TextView)findViewById(R.id.tvOutput);

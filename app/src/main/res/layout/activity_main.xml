@@ -4,15 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ashtamang.bmicalculator.MainActivity"
-    android:orientation="vertical">
+    android:background="#118BC34A"
+    android:orientation="vertical"
+    tools:context="com.ashtamang.bmicalculator.MainActivity">
+    android:gravity="center_horizontal"
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="#573F51B5"
+        android:fontFamily="monospace"
         android:text="BMI Calculator"
-        android:textSize="@android:dimen/app_icon_size"
+        android:gravity="center"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -24,41 +31,50 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="164dp"
             android:layout_height="45dp"
-            android:textSize="20dp"
-            android:text="MASS"/>
+            android:fontFamily="monospace"
+            android:text="MASS"
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/etMass"
             android:layout_width="164dp"
             android:layout_height="45dp"
             android:ems="10"
+            android:hint="in KG"
             android:inputType="numberDecimal"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="319dp" />
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="164dp"
             android:layout_height="45dp"
-            android:textSize="20dp"
-            android:text="HEIGHT(in m.sq)" />
+            android:fontFamily="monospace"
+            android:text="HEIGHT"
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/etHeight"
             android:layout_width="164dp"
             android:layout_height="49dp"
             android:ems="10"
+            android:hint="in sq. meter"
             android:inputType="numberDecimal"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="218dp" />
@@ -67,30 +83,38 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp">
 
-    <Button
-        android:id="@+id/btnCalculate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#853F51B5"
+            android:fontFamily="monospace"
+            android:text="Calculate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvOutput"
-        android:layout_width="292dp"
-        android:layout_height="59dp"
-        android:text="BMI"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="292dp"
+            android:layout_height="59dp"
+            android:hint="Your BMI"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
 </LinearLayout>
